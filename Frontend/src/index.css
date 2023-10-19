@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-display: swap;
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.neon-effect {
+  animation: neon 1s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 0px rgb(255, 43, 187), 0 0 1px  rgb(255, 43, 187), 0 0 1px  rgb(255, 43, 187), 0 0 1px  rgb(255, 43, 187);
+  }
+  to {
+    text-shadow: 0 0 1px  rgb(255, 43, 187), 0 0 2px  rgb(255, 43, 187), 0 0 2px  rgb(255, 43, 187), 0 0 2px  rgb(255, 43, 187);
+  }
+}
